@@ -5,5 +5,4 @@ from django.http import HttpResponse
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
-    path('app/', include('app.urls')) #subdomain app/home/
 ]

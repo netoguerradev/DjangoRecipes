@@ -3,3 +3,7 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'global/home.html')
+
+
+def recipe(request,id):
+    return render(request, 'global/recipe-view.html')

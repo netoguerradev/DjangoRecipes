@@ -76,7 +76,7 @@ h1,h2,h3,h4{
 
 .main-content{
     padding-top: 0;
-    display: 
+    display: flex;
 }
 
 .main-content-list{
@@ -136,7 +136,7 @@ h1,h2,h3,h4{
     flex-flow: column nowrap;
     flex-shrink: 1;
     flex-grow: 1;
-    text-align: center;]
+    text-align: center;
 }
 
 .recipe-footer{
@@ -165,4 +165,14 @@ h1,h2,h3,h4{
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.main-content-detail .recipe-list-item{
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .recipe-list-item:hover{
+    transform: scale(1);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, .2);
 }

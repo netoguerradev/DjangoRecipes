@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include 'partials/head.html' %}
+    <title>{% block title %}{% endblock title %}</title>
+<head>
+
+{% include 'partials/header.html'%}
+
+<body>
+    {% include 'partials/search.html'%}
+
+    <main class="main-content-container">
+
+        <div class="main-content main-content-list container">
+
+            {% block content %} {% endblock content %}
+
+        </div> <!--main-content-->
+
+    </main> <!--main-content-container-->
+
+    {% include 'partials/footer.html'%}
+
+</body>
+</html>
