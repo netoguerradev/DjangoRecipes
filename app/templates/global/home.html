@@ -4,8 +4,8 @@
 
 {% block content%}
 
-    {% include 'partials/recipe.html' %}
-    {% include 'partials/recipe.html' %}
-    {% include 'partials/recipe.html' %}
+    {% for recipe in recipes %}
+        {% include 'partials/recipe.html' %}
+    {% endfor %}
 
 {% endblock content%}
